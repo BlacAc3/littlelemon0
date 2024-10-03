@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-r-%0eqcja86asp_+*1@3d6t9wm65$7^p*v^m961p@)w7*3ob0n
 # DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 DEBUG = True
 
-ALLOWED_HOSTS = ['littlelemon-y7q1.onrender.com', '127.0.0.1', 'localhost', '.vercel.app']
+ALLOWED_HOSTS = ['littlelemon-y7q1.onrender.com', '127.0.0.1', 'localhost', '*']
 
 
 # Application definition
