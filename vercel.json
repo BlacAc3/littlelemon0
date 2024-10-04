@@ -4,10 +4,9 @@
     "builds": [
       {
       "src": "littlelemon/wsgi.py",
-      "use": "@ardnt/now-python-wsgi",
+      "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "30mb",
-        "runtime": "python3.8"
+        "maxLambdaSize": "30mb"
       }
     },
     {
