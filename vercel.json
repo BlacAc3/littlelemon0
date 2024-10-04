@@ -1,4 +1,5 @@
 {
+    "version":2,
     "builds": [
       {
         "src": "littlelemon/wsgi.py",
@@ -11,13 +12,17 @@
       },
       {
           "src": "build_files.sh",
-          "use": "@vercel/static",
+          "use": "@vercel/static-build",
           "config":{
               "distDir": "staticfiles"
           }
         }
     ],
     "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
       {
         "src": "/(.*)",
         "dest": "littlelemon/wsgi.py"
